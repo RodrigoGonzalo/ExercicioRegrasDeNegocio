@@ -1,6 +1,5 @@
 package br.com.fiap.regardenegocio.teste;
 
-import java.util.Calendar;
 import java.util.Scanner;
 
 import br.com.fiap.regardenegocio.contrato.Contrato;
@@ -9,8 +8,7 @@ public class TesteCalculo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		// Chamando o Calendar
-		Calendar Calendario = Calendar.getInstance();
+		// Importando o SimpleDateFormat
 		
 		// Criando Objeto
 		Contrato Contract = new Contrato();
@@ -24,6 +22,7 @@ public class TesteCalculo {
 		//Dados.nextInt(Contract.getNumeroContrato());
 		
 		System.out.println("Informe a Data desse Contrato");
+		Contract.setDataContrato(Dados.next());
 		
 		System.out.println("Digite o valor do Contrato");
 		Contract.setValorContrato(Dados.nextDouble());

@@ -1,13 +1,11 @@
 package br.com.fiap.regardenegocio.contrato;
 
-import java.util.Calendar;
-import java.util.Date;
 
 public class Contrato {
 	
 	// Tipagem dos Atributos
 	private int NumeroContrato;
-	private Date DataContrato;
+	private String DataContrato;
 	private double ValorContrato;
 	private int NumeroParcelas;
 	
@@ -16,7 +14,7 @@ public class Contrato {
 		
 	}
 	
-	public Contrato(int NumeroContrato, Date DataContrato, double ValorContrato, int NumeroParcelas) {
+	public Contrato(int NumeroContrato, String DataContrato, double ValorContrato, int NumeroParcelas) {
 		this.NumeroContrato = NumeroContrato;
 		this.DataContrato = DataContrato;
 		this.ValorContrato = ValorContrato;
@@ -33,11 +31,11 @@ public class Contrato {
 		this.NumeroContrato = NumeroContrato;
 	}
 
-	public Date getDataContrato() {
+	public String getDataContrato() {
 		return DataContrato;
 	}
 
-	public void setDataContrato(Date DataContrato) {
+	public void setDataContrato(String DataContrato) {
 		this.DataContrato = DataContrato;
 	}
 
