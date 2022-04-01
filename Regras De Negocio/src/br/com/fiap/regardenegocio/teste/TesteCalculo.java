@@ -1,5 +1,6 @@
 package br.com.fiap.regardenegocio.teste;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import br.com.fiap.regardenegocio.contrato.Contrato;
@@ -30,9 +31,15 @@ public class TesteCalculo {
 		System.out.println("Digite a Quantidade de Parcelas");
 		Contract.setNumeroParcelas(Dados.nextInt());
 		
-		// Saída dos dados
-		System.out.println(Contract);
+		// Chamando os Arrays que criei nom métodos
+		ArrayList<String> Data = Contract.CalcularTempo();
+		ArrayList<Double> Parcela = Contract.CalcularParcelas();
 		
+		System.out.println("Parcelas:");
+		
+		for(int i=0; i<Data.size(); i++) {
+			System.out.printf("%s - R$ %.2f \n", Data.get(i), Parcela.get(i));
+		}
 	}
 
 }
