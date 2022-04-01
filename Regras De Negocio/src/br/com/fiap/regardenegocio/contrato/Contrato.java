@@ -91,7 +91,7 @@ public class Contrato {
 		// Try e Catch para o processo de transformar String pra Date
 		try {
 			// A variável DTF define o padrão que eu quero de data
-			DTF = DateTimeFormatter.ofPattern("dd/mm/yyyy");
+			DTF = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 			
 			// O LD vai receber o meu getDataContrato com o meu DTF como parâmetro
 			LD = LocalDate.parse(getDataContrato(), DTF);
